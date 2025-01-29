@@ -190,8 +190,20 @@ section h2 {
 
 /* Footer Styles */
 footer {
-  text-align: center;
+  text-align: right;
   padding: 1rem 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
 }
 
 /* Pulsing Circle Background */
@@ -206,6 +218,19 @@ footer {
   animation: pulse 2s infinite;
   transform: translate(-50%, -50%);
   z-index: 0;
+}
+
+.pulsing-circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 4s infinite;
 }
 
 @keyframes pulse {
@@ -223,15 +248,18 @@ footer {
   }
 }
 
-/* Additional Styles for New Elements */
-.flex {
-  display: flex;
+@keyframes ripple {
+  0% {
+      width: 300px;
+      height: 300px;
+      opacity: 0.4;
+  }
+  100% {
+      width: 2000px;
+      height: 2000px;
+      opacity: 0;
+  }
 }
-
-.flex-col {
-  flex-direction: column;
-}
-
 .intro {
   text-align: center; /* Center intro text */
 }

@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
@@ -30,9 +28,8 @@
                 <p id="location">Pittsburgh, PA</p>
             </div>
             <div class="social-buttons">
-                <a href="C:\Users\penut\OneDrive\Desktop\College\Personal Projects\Resume\Recent\Aiden_Nemeroff_Resume.pdf" class="button" target="_blank">
-                    <img src="images\fileDownload.svg"
-                        alt="Resume Icon" class="icon">
+                <a href="resume.pdf" class="button" target="_blank">
+                    <img src="images\fileDownload.svg" alt="Resume Icon" class="icon">
                     Resume
                 </a>
                 <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" class="button" target="_blank">
@@ -96,14 +93,14 @@
                 <div>Education 1: Description</div>
                 <div>Education 2: Description</div>
             </div>
-
-            <button type="button" role="tab"
-                class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all disabled:pointer-events-none disabled:opacity-50 border-0 outline-0 bg-background text-foreground shadow"
-                data-orientation="horizontal">Work</button>
-            <button type="button" role="tab"
-                class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background
+        
+        <button type="button" role="tab"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all disabled:pointer-events-none disabled:opacity-50 border-0 outline-0 bg-background text-foreground shadow"
+            data-orientation="horizontal">Work</button>
+        <button type="button" role="tab"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background
          transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 bg-transparent"
-                data-orientation="horizontal">Education</button>
+            data-orientation="horizontal">Education</button>
         </section>
 
         <section id="contact">
@@ -111,15 +108,24 @@
             <p>You can reach me at: <a href="mailto:aidennemeroff@gmail.com">aidennemeroff@gmail.com</a></p>
         </section>
 
+        <br> <!-- Line break before the footer -->
         <footer>
             <p>&copy; 2023 My Portfolio</p>
+            <div class="footer-icons">
+                <a href="https://github.com/penut101" target="_blank">
+                    <img src="images\githubIcon.svg" alt="GitHub Icon" class="footer-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" target="_blank">
+                    <img src="images\linkedinIcon.svg" alt="LinkedIn Icon" class="footer-icon">
+                </a>
+            </div>
         </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function(){
             $('.slider').slick({
                 dots: true,
                 infinite: true,
