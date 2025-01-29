@@ -1,0 +1,434 @@
+/* General Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #393BB2, #E2CBFF);
+    color: #e0e0e0;
+    position: relative;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Header Styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#location {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin-top: 0.5rem;
+    text-align: center; /* Center location text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center list items */
+}
+
+nav ul li {
+    display: inline-block; /* Change to inline-block for centering */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    display: block;
+    margin: 0 auto 1rem; /* Center profile image */
+    border-radius: 50%;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+
+/* Skills List Styles */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center text */
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Slider Styles */
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    transform: rotateY(180deg);
+}
+
+.slider div {
+    background: #333;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Pulsing Circle Background */
+.pulsing-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Additional Styles for New Elements */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center; /* Center intro text */
+}
+
+.moveUpAni {
+    animation: moveUp 1s ease-in-out;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-gray-400 {
+    color: #b0b0b0;
+}
+
+.rounded {
+    border-radius: 0.375rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-40 {
+    width: 10rem;
+}
+
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.ml-3 {
+    margin-left: 0.75rem;
+}
+
+.h-7 {
+    height: 1.75rem;
+}
+
+.w-7 {
+    width: 1.75rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.text-fafafa {
+    color: #fafafa;
+}
+
+.rounded-7px {
+    border-radius: 7px;
+}
+
+.hover-border-fafafa:hover {
+    border-color: #fafafa;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.min-w-36 {
+    min-width: 9rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.padding-1px {
+    padding: 1px;
+}
+
+.ml-neg-1px {
+    margin-left: -1px;
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+}
+
+.focus\:ring-2:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.focus\:ring-slate-400:focus {
+    box-shadow: 0 0 0 2px #94a3b8;
+}
+
+.focus\:ring-offset-2:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5), 0 0 0 2px #94a3b8;
+}
+
+.focus\:ring-offset-slate-50:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5), 0 0 0 2px #f8fafc;
+}
+
+.animate-\[spin_2s_linear_infinite\] {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-slate-950 {
+    background-color: #0f172a;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.backdrop-blur-3xl {
+    backdrop-filter: blur(64px);
+}
+
+/* Aligning the profile image to the left */
+.profile-image {
+    flex-shrink: 0;
+    margin: 20px 0;
+    height: calc(150px + 6vw);
+    width: calc(150px + 6vw);
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(82, 117, 214, 0.5);
+    border-radius: 50%;
+    background-image: var(--img-url), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}

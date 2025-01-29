@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiden Nemeroff</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <div class="pulsing-circle"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="container">
+        <header>
+            <img src="images/Picture.jpg" alt="Aiden Nemeroff" class="profile-image">
+            <h1><span id="typed-name"></span></h1>
+            <h2>Software Engineer</h2>
+            <div id="location-container">
+                <img src="images/location.svg" alt="Location Icon" class="location-icon">
+                <p id="location">Pittsburgh, PA</p>
+            </div>
+            <div class="social-buttons">
+                <a href="C:\Users\penut\OneDrive\Desktop\College\Personal Projects\Resume\Recent\Aiden_Nemeroff_Resume.pdf" class="button" target="_blank">
+                    <img src="images\fileDownload.svg"
+                        alt="Resume Icon" class="icon">
+                    Resume
+                </a>
+                <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" class="button" target="_blank">
+                    <img src="images\linkedinIcon.svg" alt="LinkedIn Icon" class="icon">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/penut101" class="button" target="_blank">
+                    <img src="images\githubIcon.svg" alt="GitHub Icon" class="icon">
+                    GitHub
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I am Aiden Nemeroff, and I am currently a sophomore at the University of Pittsburgh studying
+                Computer Science with a minor in Information Science. I have a strong passion for technology and
+                problem-solving,
+                with proficiency in Java and a keen ability to communicate and collaborate effectively with others..</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>R</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </section>
+
+        <section id="work-education">
+            <h2>Work Experience & Education</h2>
+            <div class="slider">
+                <div>Job 1: Description</div>
+                <div>Job 2: Description</div>
+                <div>Job 3: Description</div>
+                <div>Education 1: Description</div>
+                <div>Education 2: Description</div>
+            </div>
+
+            <button type="button" role="tab"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all disabled:pointer-events-none disabled:opacity-50 border-0 outline-0 bg-background text-foreground shadow"
+                data-orientation="horizontal">Work</button>
+            <button type="button" role="tab"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background
+         transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 bg-transparent"
+                data-orientation="horizontal">Education</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:aidennemeroff@gmail.com">aidennemeroff@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 My Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+
+        var typed = new Typed('#typed-name', {
+            strings: ["Aiden Nemeroff"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false
+        });
+    </script>
+</body>
+
+</html>
