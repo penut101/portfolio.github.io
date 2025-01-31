@@ -9,8 +9,10 @@ body {
   position: relative;
 }
 
-html, body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -25,12 +27,14 @@ html, body {
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
+  /* Center content horizontally */
 }
 
 /* Header Styles */
 header {
-  text-align: center; /* Center header text */
+  text-align: center;
+  /* Center header text */
   margin-bottom: 2rem;
 }
 
@@ -54,15 +58,19 @@ header h1 {
 }
 
 .location-icon {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  margin-right: 10px; /* Space between the icon and text */
+  width: 20px;
+  /* Adjust the width as needed */
+  height: 20px;
+  /* Adjust the height as needed */
+  margin-right: 10px;
+  /* Space between the icon and text */
 }
 
 #location {
   font-size: 1.2rem;
   color: #b0b0b0;
-  text-align: center; /* Center location text */
+  text-align: center;
+  /* Center location text */
 }
 
 .social-buttons {
@@ -96,11 +104,13 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  text-align: center; /* Center list items */
+  text-align: center;
+  /* Center list items */
 }
 
 nav ul li {
-  display: inline-block; /* Change to inline-block for centering */
+  display: inline-block;
+  /* Change to inline-block for centering */
   margin: 0 10px;
 }
 
@@ -116,25 +126,32 @@ nav ul li a:hover {
 /* Profile Image Styles */
 .profile-image {
   display: block;
-  margin: 0 auto 1rem; /* Center profile image */
+  margin: 0 auto 1rem;
+  /* Center profile image */
   border-radius: 50%;
-  width: 150px; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  width: 150px;
+  /* Adjust the width as needed */
+  height: 150px;
+  /* Adjust the height as needed */
   object-fit: cover;
-  background: transparent; /* Make background transparent */
+  background: transparent;
+  /* Make background transparent */
 }
 
 /* Section Styles */
 section {
   margin-bottom: 2rem;
-  width: 100%; /* Ensure sections take full width */
+  width: 100%;
+  /* Ensure sections take full width */
 }
 
 section h2 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 0;
-  text-align: left; /* Align h2 elements to the left */
-  padding-left: 20px; /* Add padding to align with other content */
+  text-align: left;
+  /* Align h2 elements to the left */
+  padding-left: 20px;
+  /* Add padding to align with other content */
 }
 
 /* Skills List Styles */
@@ -142,7 +159,8 @@ section h2 {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center text */
+  text-align: center;
+  /* Center text */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -192,22 +210,6 @@ section h2 {
   background: #2b2b8a;
 }
 
-/* Slider Styles */
-.slider {
-  width: 100%;
-  margin: 0 auto;
-  transform: rotateY(180deg);
-}
-
-.slider div {
-  background: #333;
-  padding: 20px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  text-align: center;
-  transform: rotateY(180deg);
-}
-
 /* Footer Styles */
 footer {
   text-align: center;
@@ -243,9 +245,11 @@ tag {
   width: 20px;
   height: 20px;
 }
+
 /* Pulsing Circle Background */
 .pulsing-circle {
-  position: fixed; /* Use fixed positioning to keep it centered on the screen */
+  position: fixed;
+  /* Use fixed positioning to keep it centered on the screen */
   top: 50%;
   left: 50%;
   width: 300px;
@@ -272,29 +276,32 @@ tag {
 
 @keyframes pulse {
   0% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
+
   50% {
-      transform: translate(-50%, -50%) scale(1.5);
-      opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.7;
   }
+
   100% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes ripple {
   0% {
-      width: 300px;
-      height: 300px;
-      opacity: 0.4;
+    width: 300px;
+    height: 300px;
+    opacity: 0.4;
   }
+
   100% {
-      width: 2000px;
-      height: 2000px;
-      opacity: 0;
+    width: 2000px;
+    height: 2000px;
+    opacity: 0;
   }
 }
 
@@ -308,7 +315,8 @@ tag {
 }
 
 .intro {
-  text-align: center; /* Center intro text */
+  text-align: center;
+  /* Center intro text */
 }
 
 .moveUpAni {
@@ -317,12 +325,13 @@ tag {
 
 @keyframes moveUp {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
+
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -464,10 +473,11 @@ tag {
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -499,6 +509,92 @@ tag {
 
 .backdrop-blur-3xl {
   backdrop-filter: blur(64px);
+}
+
+/* Fade effect */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Timeline styling */
+.timeline-container {
+  position: relative;
+  min-height: 200px;
+  /* Ensure container has height */
+}
+
+.timeline-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.timeline-section.show {
+  display: block;
+}
+
+/* Additional styling for buttons and timeline items */
+.timeline-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.timeline-button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.timeline-button:hover {
+  color: #0056b3;
+}
+
+.timeline-button.active {
+  color: white;
+}
+
+.moving-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: left 0.3s, width 0.3s;
+  z-index: 0;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.logo-bubble {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* Aligning the profile image to the left */

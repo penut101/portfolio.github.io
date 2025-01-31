@@ -24,39 +24,30 @@
         <header>
             <img src="images/Picture.jpg" alt="Aiden Nemeroff" class="profile-image">
             <h1><span id="typed-name"></span></h1>
-            <h1>Software Engineer</h2>
-                <div id="location-container">
-                    <img src="images/location.svg" alt="Location Icon" class="location-icon">
-                    <p id="location">Pittsburgh, PA</p>
-                </div>
-                <div class="social-buttons">
-                    <a href="resume.pdf" class="button" target="_blank">
-                        <img src="images/fileDownload.svg" alt="Resume Icon" class="icon">
-                        Resume
-                    </a>
-                    <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" class="button" target="_blank">
-                        <img src="images/linkedinIcon.svg" alt="LinkedIn Icon" class="icon">
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/penut101" class="button" target="_blank">
-                        <img src="images/githubIcon.svg" alt="GitHub Icon" class="icon">
-                        GitHub
-                    </a>
-                    <a href="mailto:aidennemeroff@gmail.com" class="button" target="_blank">
-                        <img src="images/emailIcon.svg" alt="Email Icon" class="icon">
-                        Email
-                    </a>
-                </div>
-                <!--<nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>-->
+            <h1><span id="typed-title"></span></h1>
+            <div id="location-container">
+                <img src="images/location.svg" alt="Location Icon" class="location-icon">
+                <p id="location">Pittsburgh, PA</p>
+            </div>
+            <div class="social-buttons">
+                <a href="resume.pdf" class="button" target="_blank">
+                    <img src="images/fileDownload.svg" alt="Resume Icon" class="icon">
+                    Resume
+                </a>
+                <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" class="button" target="_blank">
+                    <img src="images/linkedinIcon.svg" alt="LinkedIn Icon" class="icon">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/penut101" class="button" target="_blank">
+                    <img src="images/githubIcon.svg" alt="GitHub Icon" class="icon">
+                    GitHub
+                </a>
+                <a href="mailto:aidennemeroff@gmail.com" class="button" target="_blank">
+                    <img src="images/emailIcon.svg" alt="Email Icon" class="icon">
+                    Email
+                </a>
+            </div>
         </header>
-
         <section id="about">
             <h1>About Me</h2>
                 <p>Hello, I am Aiden Nemeroff, and I am currently a sophomore at the University of Pittsburgh studying
@@ -65,7 +56,6 @@
                     with proficiency in Java and a keen ability to communicate and collaborate effectively with others.
                 </p>
         </section>
-
         <section id="skills">
             <h1>Skills</h2>
                 <ul class="skills-list">
@@ -79,7 +69,6 @@
                     <li>ASM</li>
                 </ul>
         </section>
-
         <section id="projects">
             <h1>Projects</h1>
             <div class="project">
@@ -91,8 +80,6 @@
                     <span class="tech-bubble">Woodworking</span>
                     <span class="tech-bubble">Linux</span>
                     <span class="tech-bubble">Woodworking</span>
-
-
                 </div>
                 <p>A custom-built arcade machine featuring a wooden cabinet, Raspberry Pi integration, joystick and
                     button controls, and RetroPie software for multi-platform gaming. Designed for a seamless and
@@ -124,28 +111,38 @@
                     optimized for performance and user experience.</p>
             </div>
         </section>
-
         <section id="work-education">
-            <h1>Work Experience & Education</h2>
-                <div class="slider">
-                    <div>Job 1: Description</div>
-                    <div>Job 2: Description</div>
-                    <div>Job 3: Description</div>
-                    <div>Education 1: Description</div>
-                    <div>Education 2: Description</div>
+            <h2>Work Experience & Education</h2>
+            <div class="timeline-buttons">
+                <button type="button" class="timeline-button" data-target="work">Work</button>
+                <button type="button" class="timeline-button" data-target="education">Education</button>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-section fade" id="work">
+                    <div class="timeline-item">
+                        <h3><img src="images/shopriteLogo.svg" alt="Logo" class="logo-bubble"> Shoprite</h3>
+                        <p>Description of job 1.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><img src="images/quickcheckLogo.svg" alt="Logo" class="logo-bubble"> QuickCheck Corporation
+                        </h3>
+                        <p>Description of job 2.</p>
+                    </div>
                 </div>
-
-                <button type="button" role="tab"
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all disabled:pointer-events-none disabled:opacity-50 border-0 outline-0 bg-background text-foreground shadow"
-                    data-orientation="horizontal">Work</button>
-                <button type="button" role="tab"
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background
-         transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 bg-transparent"
-                    data-orientation="horizontal">Education</button>
+                <div class="timeline-section fade" id="education">
+                    <div class="timeline-item">
+                        <h3><img src="images/pittLogo.svg" alt="Logo" class="logo-bubble"> University Of Pittsburgh</h3>
+                        <p>Description of education 1.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><img src="images/jacksonLogo.svg" alt="Logo" class="logo-bubble"> Jackson Memorial High
+                            School</h3>
+                        <p>Description of education 2.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <br> <!-- Line break before the footer -->
         <footer>
-            <p>&copy; Aiden Nemeroff's 2025 Portfolio</p>
             <div class="footer-icons">
                 <a href="https://github.com/penut101" target="_blank">
                     <img src="images\githubIcon.svg" alt="GitHub Icon" class="footer-icon">
@@ -156,25 +153,24 @@
             </div>
         </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true
-            });
-        });
-
         var typed = new Typed('#typed-name', {
             strings: ["Aiden Nemeroff"],
             typeSpeed: 50,
             backSpeed: 25,
-            loop: false
+            loop: false,
+            showCursor: false
+        });
+        var typed = new Typed('#typed-title', {
+            strings: ["Software Engineer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            startDelay: 1050,
+            loop: false,
+            onComplete: function (self) {
+                self.cursor.remove();
+            }
         });
     </script>
 </body>
