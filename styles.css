@@ -548,13 +548,13 @@ tag {
   align-items: center;
   margin-bottom: 20px;
   padding: 5px;
-  border: 2px solid #007bff;
+  border: 2px solid #475cf9;
   border-radius: 10px;
 }
 
 .timeline-button {
   background-color: transparent;
-  color: #007bff;
+  color: #475cf9;
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
@@ -580,7 +580,7 @@ tag {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #007bff;
+  background-color: #475cf9;
   border-radius: 5px;
   transition: left 0.3s, width 0.3s;
   z-index: 0;
