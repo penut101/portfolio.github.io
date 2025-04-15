@@ -1,7 +1,7 @@
-# Portfolio Website - Aiden Nemeroff
+# [Portfolio Website](https://penut101.github.io/portfolio.github.io/) - Aiden Nemeroff
 
 ## Overview
-Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences in software development and other areas of interest. It serves as a central hub for my work, allowing visitors to explore my technical expertise and creative endeavors.
+Welcome to my personal [portfolio](https://penut101.github.io/portfolio.github.io/) website! This site showcases my projects, skills, and experiences in software development and other areas of interest. It serves as a central hub for my work, allowing visitors to explore my technical expertise and creative endeavors.
 
 ## Features
 - **Project Showcase** – A collection of my projects with descriptions, technologies used, and links to repositories.
@@ -23,8 +23,7 @@ If you'd like to connect, feel free to reach out via:
 - Email: aidennemeroff@gmail.com
 - LinkedIn: https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/
 - GitHub: https://github.com/penut101
-  
+
 ---
 
-Thank you for visiting my portfolio!
-
+Thank you for visiting my [portfolio](https://penut101.github.io/portfolio.github.io/)!
