@@ -17,12 +17,12 @@ Welcome to my personal [portfolio](https://penut101.github.io/portfolio.github.i
 - Add a blog section
 - Enhance animations and UI elements
 - Implement a dark mode toggle
-
-## Contact
+  
+## 📬 Reach Out to Me
 If you'd like to connect, feel free to reach out via:
-- Email: aidennemeroff@gmail.com
-- LinkedIn: https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/
-- GitHub: https://github.com/penut101
+- 📧 Email: aidennemeroff@gmail.com  
+- 🔗 LinkedIn: https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/
+- 💬 Github: https://github.com/penut101
 
 ---
 
