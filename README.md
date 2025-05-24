@@ -1,28 +1,28 @@
-# [Portfolio Website](https://penut101.github.io/portfolio.github.io/) - Aiden Nemeroff
+# 🌐 [Portfolio Website](https://penut101.github.io/portfolio.github.io/) – Aiden Nemeroff
 
-## Overview
+## 🧭 Overview
 Welcome to my personal [portfolio](https://penut101.github.io/portfolio.github.io/) website! This site showcases my projects, skills, and experiences in software development and other areas of interest. It serves as a central hub for my work, allowing visitors to explore my technical expertise and creative endeavors.
 
-## Features
+## ✨ Features
 - **Project Showcase** – A collection of my projects with descriptions, technologies used, and links to repositories.
 - **About Me** – A brief introduction to my background, skills, and interests.
 - **Resume** – A downloadable version of my resume.
 - **Contact** – A section for reaching out via email or social media links.
 
-## Technologies Used
+## 🛠️ Technologies Used
 - HTML, CSS, JavaScript
 - Hosting: GitHub Pages
 
-## Future Improvements
+## 🚀 Future Improvements
 - Add a blog section
 - Enhance animations and UI elements
 - Implement a dark mode toggle
 
-## Contact
+## 📬 Reach Out to Me
 If you'd like to connect, feel free to reach out via:
-- Email: aidennemeroff@gmail.com
-- LinkedIn: https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/
-- GitHub: https://github.com/penut101
+- 📧 Email: aidennemeroff@gmail.com  
+- 🔗 LinkedIn: https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/
+- 💬 GitHub: https://github.com/penut101
 
 ---
 
