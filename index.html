@@ -242,6 +242,36 @@
                 self.cursor.remove();
             }
         });
+        function updateMovingRectangle() {
+            const container = document.querySelector('.timeline-buttons');
+            const activeBtn = document.querySelector('.timeline-button.active');
+            const rectangle = document.querySelector('.moving-rectangle');
+
+            if (window.innerWidth > 768 && activeBtn && rectangle && container) {
+                const btnRect = activeBtn.getBoundingClientRect();
+                const containerRect = container.getBoundingClientRect();
+                rectangle.style.width = `${btnRect.width}px`;
+                rectangle.style.left = `${btnRect.left - containerRect.left}px`;
+                rectangle.style.display = 'block';
+            } else if (rectangle) {
+                rectangle.style.display = 'none'; // Hide on mobile
+            }
+        }
+
+        // Trigger on load and resize
+        window.addEventListener('load', updateMovingRectangle);
+        window.addEventListener('resize', updateMovingRectangle);
+
+        // Also trigger on timeline button click
+        document.querySelectorAll('.timeline-button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.timeline-button').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                updateMovingRectangle();
+            });
+        });
+    </script>
+
     </script>
 </body>
 
