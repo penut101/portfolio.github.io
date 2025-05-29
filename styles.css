@@ -703,3 +703,65 @@ tag {
 .project-button:hover {
   background-color: #2b2b8a;
 }
+
+/* -------- Responsive Mobile Optimizations -------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section h1,
+  section h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .timeline-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .timeline-button {
+    width: 100%;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
