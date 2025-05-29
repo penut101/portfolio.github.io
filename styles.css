@@ -709,6 +709,7 @@ tag {
   .container {
     padding: 1rem;
     margin: 1rem auto;
+    padding-bottom: 5rem;
   }
 
   header h1 {
@@ -753,23 +754,8 @@ tag {
 
   .timeline-buttons {
     flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .timeline-button {
-    width: 100%;
-  }
-
-  .footer-icons {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .timeline-buttons {
-    flex-direction: column;
     align-items: stretch;
+    gap: 0.5rem;
   }
 
   .timeline-button {
@@ -780,8 +766,22 @@ tag {
     font-size: 1rem;
   }
 
+  .timeline-container {
+    padding-bottom: 3rem;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .moving-rectangle {
     display: none;
-    /* Hide highlight bar on mobile */
+    /* Hide highlight block on mobile */
   }
+}
+
+/* Ensure padding/margin is included in total width/height */
+* {
+  box-sizing: border-box;
 }
