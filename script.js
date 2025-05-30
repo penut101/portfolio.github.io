@@ -1,3 +1,5 @@
+// Script for the timeline functionality
+// Ensure the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".timeline-button");
   const sections = document.querySelectorAll(".timeline-section");
@@ -43,3 +45,42 @@ document.addEventListener("DOMContentLoaded", () => {
   movingRectangle.style.left = `${firstButtonRect.left - containerRect.left}px`;
   movingRectangle.style.width = `${firstButtonRect.width}px`;
 });
+
+//Script for chatbot functionality
+const toggleBtn = document.getElementById("chatbot-toggle");
+const popup = document.getElementById("chatbot-popup");
+const closeBtn = document.getElementById("chatbot-close");
+const log = document.getElementById("chatbot-log");
+const input = document.getElementById("chatbot-input");
+const sendBtn = document.getElementById("chatbot-send");
+
+toggleBtn.addEventListener("click", () => popup.classList.toggle("hidden"));
+closeBtn.addEventListener("click", () => popup.classList.add("hidden"));
+sendBtn.addEventListener("click", sendMessage);
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") sendMessage();
+});
+
+function sendMessage() {
+  const message = input.value.trim();
+  if (!message) return;
+
+  log.innerHTML += `<div class="user"><strong>You:</strong> ${message}</div>`;
+  input.value = "";
+  log.scrollTop = log.scrollHeight;
+
+  fetch("http://localhost:5000/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      const reply = data.response || "Oops, something went wrong.";
+      log.innerHTML += `<div class="bot"><strong>Bot:</strong> ${reply}</div>`;
+      log.scrollTop = log.scrollHeight;
+    })
+    .catch(() => {
+      log.innerHTML += `<div class="bot"><strong>Bot:</strong> Error connecting to server.</div>`;
+    });
+}
