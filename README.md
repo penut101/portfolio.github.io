@@ -11,7 +11,7 @@ Welcome to my personal [portfolio](https://penut101.github.io/portfolio.github.i
 
 ## 🛠️ Technologies Used
 - HTML, CSS, JavaScript
-- Hosting: GitHub Pages
+- Hosting: Vercel
 
 ## 🚀 Future Improvements
 - Add a blog section
