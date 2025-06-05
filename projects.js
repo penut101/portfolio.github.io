@@ -16,7 +16,7 @@ const projects = [
     description:
       "A modern site for communication and events, built for Sigma Alpha Mu.",
     languages: ["HTML", "CSS", "JavaScript", "Web"],
-    github: "https://github.com/penut101/SamPitt.github.io",
+    github: "https://penut101.github.io/SamPitt.github.io/",
   },
   {
     title: "Anagram Solver",
