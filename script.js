@@ -1,11 +1,11 @@
 // Script for the timeline functionality
 // Ensure the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".timeline-button");
-  const sections = document.querySelectorAll(".timeline-section");
-  const movingRectangle = document.createElement("div");
-  movingRectangle.classList.add("moving-rectangle");
-  document.querySelector(".timeline-buttons").appendChild(movingRectangle);
+  const buttons = document.querySelectorAll(".timeline-button"); // Select all buttons in the timeline
+  const sections = document.querySelectorAll(".timeline-section"); // Select all sections in the timeline
+  const movingRectangle = document.createElement("div"); // Create a rectangle to indicate the active button
+  movingRectangle.classList.add("moving-rectangle"); // Add a class for styling the rectangle
+  document.querySelector(".timeline-buttons").appendChild(movingRectangle); // Append the rectangle to the button container
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // Move the rectangle
-      const buttonRect = button.getBoundingClientRect();
-      const containerRect = button.parentElement.getBoundingClientRect();
+      const buttonRect = button.getBoundingClientRect(); // Get the button's position
+      const containerRect = button.parentElement.getBoundingClientRect(); // Get the container's position
       movingRectangle.style.left = `${buttonRect.left - containerRect.left}px`;
       movingRectangle.style.width = `${buttonRect.width}px`;
     });
@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   movingRectangle.style.width = `${firstButtonRect.width}px`;
 });
 
-//Script for chatbot functionality
+// Script for chatbot functionality -
+// TODO: Not entirely working  as of now, a back pocket project
 const toggleBtn = document.getElementById("chatbot-toggle");
 const popup = document.getElementById("chatbot-popup");
 const closeBtn = document.getElementById("chatbot-close");
