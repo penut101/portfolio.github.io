@@ -13,46 +13,50 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <h1><span id="typed-name"></span></h1>
-        <input type="text" id="search-bar" placeholder="Search projects...">
-    </header>
 
-    <div class="layout">
-        <aside class="sidebar">
-            <h2>Filter by:</h2>
-            <div class="filter-group">
-                <label><input type="checkbox" value="Python" class="filter-checkbox"> Python</label>
-                <label><input type="checkbox" value="Java" class="filter-checkbox"> Java</label>
-                <label><input type="checkbox" value="Web" class="filter-checkbox"> Web</label>
-                <label><input type="checkbox" value="HTML" class="filter-checkbox"> HTML</label>
-                <label><input type="checkbox" value="CSS" class="filter-checkbox"> CSS</label>
-                <label><input type="checkbox" value="JavaScript" class="filter-checkbox"> JavaScript</label>
-                <label><input type="checkbox" value="Hardware" class="filter-checkbox"> Hardware</label>
-            </div>
-        </aside>
+    <body>
+        <back-button href="index.html" label="Back to Main Page" position="top-left"></back-button>
 
-        <main class="projects-container" id="projects-container">
-            <!-- Projects will be injected here -->
-        </main>
-    </div>
+        <header class="page-header">
+            <h1><span id="typed-name"></span></h1>
+            <input type="text" id="search-bar" placeholder="Search projects...">
+        </header>
 
-    <footer>
-        <p style="text-align: center; color: gray; padding: 2rem;">
-            © 2025 <a href="index.html" style="color: inherit; text-decoration: underline;">Aiden Nemeroff</a>
-        </p>
-    </footer>
+        <div class="layout">
+            <aside class="sidebar">
+                <h2>Filter by:</h2>
+                <div class="filter-group">
+                    <label><input type="checkbox" value="Python" class="filter-checkbox"> Python</label>
+                    <label><input type="checkbox" value="Java" class="filter-checkbox"> Java</label>
+                    <label><input type="checkbox" value="Web" class="filter-checkbox"> Web</label>
+                    <label><input type="checkbox" value="HTML" class="filter-checkbox"> HTML</label>
+                    <label><input type="checkbox" value="CSS" class="filter-checkbox"> CSS</label>
+                    <label><input type="checkbox" value="JavaScript" class="filter-checkbox"> JavaScript</label>
+                    <label><input type="checkbox" value="Hardware" class="filter-checkbox"> Hardware</label>
+                </div>
+            </aside>
 
-    <script src="projects.js"></script>
-    <script>
-        new Typed('#typed-name', {
-            strings: ["Aiden's Projects"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: false,
-            showCursor: false
-        });
-    </script>
-</body>
+            <main class="projects-container" id="projects-container">
+                <!-- Projects will be injected here -->
+            </main>
+        </div>
+
+        <footer>
+            <p style="text-align: center; color: gray; padding: 2rem;">
+                © 2025 <a href="index.html" style="color: inherit; text-decoration: underline;">Aiden Nemeroff</a>
+            </p>
+        </footer>
+
+        <script src="projects.js"></script>
+        <script>
+            new Typed('#typed-name', {
+                strings: ["Aiden's Projects"],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: false,
+                showCursor: false
+            });
+        </script>
+    </body>
 
 </html>
