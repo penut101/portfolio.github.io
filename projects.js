@@ -32,6 +32,13 @@ const projects = [
     languages: ["Python", "Hardware"],
     github: "",
   },
+  {
+    title: "Freelance Website Design & Build",
+    description:
+      "Built a fully responsive website tailored to the client’s needs, improving their online presence and user engagement.",
+    languages: ["HTML", "CSS", "JavaScript", "Web"],
+    github: "https://github.com/penut101/Collin-Ferguson-s-Portfolio",
+  },
 ];
 
 // === Helper Function: Get selected filters ===
