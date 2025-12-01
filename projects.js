@@ -37,7 +37,7 @@ const projects = [
     description:
       "Built a fully responsive website tailored to the client’s needs, improving their online presence and user engagement.",
     languages: ["HTML", "CSS", "JavaScript", "Web"],
-    github: "https://github.com/penut101/Collin-Ferguson-s-Portfolio",
+    github: "https://collinferguson.com/",
   },
 ];
 
